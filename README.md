@@ -38,7 +38,7 @@
 
 ## 🌐 Currently Working On
 
-- 🤖 An **Falcon- AI Fact Checker** that can retrieve, verify, and present facts from the internet  
+- 🤖  **Falcon- AI Fact Checker** that can retrieve, verify, and present facts from the internet  
 - 🧠 A **Coding AI Agent** to assist developers from prompt to production  
 
 ---
