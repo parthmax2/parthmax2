@@ -38,10 +38,8 @@
 
 ## 🌐 Currently Working On
 
-- 🤖 An **Agentic AI Fact Checker** that can retrieve, verify, and present facts from the internet  
+- 🤖 An **Falcon- AI Fact Checker** that can retrieve, verify, and present facts from the internet  
 - 🧠 A **Coding AI Agent** to assist developers from prompt to production  
-- 💼 A **Digital Business Card** SaaS platform using QR and dynamic web pages  
-- 🏠 Automating my **room using AI**, with voice commands and low-cost sensors  
 
 ---
 
