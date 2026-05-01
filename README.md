@@ -229,10 +229,9 @@ $ whoami
 ## 🐍 Watch My Contributions Get Eaten
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/parthmax2/parthmax2/output/github-contribution-grid-snake-dark.svg" width="100%" alt="GitHub Contribution Snake"/>
+  <img src="https://github.com/parthmax2/parthmax2/github-user-contribution.svg" width="100%" alt="GitHub Contribution Snake"/>
 </div>
 
-> Set this up with the [Platane/snk](https://github.com/Platane/snk) GitHub Action — takes 2 minutes ⚡
 
 ---
 
