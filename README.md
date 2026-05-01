@@ -218,18 +218,17 @@ $ whoami
 
 <br/><br/>
 
-<img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="180" title="GitHub Trophy"/>
+<img src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png" width="60" title="GitHub Trophy"/>
 
 </div>
 
-> 💡 Keep only the badges that appear on your actual [GitHub profile achievements](https://github.com/parthmax2?tab=achievements).
 
 ---
 
 ## 🐍 Watch My Contributions Get Eaten
 
 <div align="center">
-  <img src="https://github.com/parthmax2/parthmax2/github-user-contribution.svg" width="100%" alt="GitHub Contribution Snake"/>
+  <img src="github-user-contribution.svg" width="100%" alt="GitHub Contribution Snake"/>
 </div>
 
 
