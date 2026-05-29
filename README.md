@@ -15,16 +15,44 @@
 </div>
 
 ---
+<table>
+<tr>
 
-```bash
-$ whoami
-> Saksham Pathak (Parthmax)  ·  Lucknow, India 🇮🇳
-> M.Sc. AI & ML  ·  IIIT Lucknow
-> Building intelligence that reasons, acts, and automates.
+<td width="58%" valign="top">
 
-$ current_build
-> Barge-in Voice Agents  ·  Tool-enabled AI + CRM Workflows  ·  3D Conversational Avatar
-```
+## About Me
+
+I'm **Saksham Pathak**, an AI Engineer and M.Sc. AI & ML student at IIIT Lucknow, focused on building intelligent systems that can listen, reason, retrieve knowledge, and take action.
+
+My work spans **Voice AI, LLM Agents, RAG Pipelines, Fine-Tuning, and AI Automation**, with a strong interest in creating real-time AI experiences that feel natural and human.
+
+Currently, I'm exploring:
+
+* 🎙️ Barge-in Voice Agents & Conversational AI
+* 🧠 Tool-Enabled LLM Systems and Agent Workflows
+* 📚 Retrieval-Augmented Generation (RAG)
+* 🤖 AI-Powered CRM & Business Automation
+* 🎭 Real-Time 3D Conversational Avatars
+
+I enjoy turning ambitious AI ideas into practical systems that people can interact with, trust, and use every day.
+
+</td>
+
+<td width="42%" align="center">
+
+<video width="100%" autoplay loop muted playsinline>
+  <source src="about.webm" type="video/webm">
+</video>
+
+### Project JARVIS
+
+*Voice → Reasoning → Action*
+
+</td>
+
+</tr>
+</table>
+
 
 ---
 
