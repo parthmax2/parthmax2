@@ -40,14 +40,9 @@ I enjoy turning ambitious AI ideas into practical systems that people can intera
 
 <td width="42%" align="center">
 
-<video width="100%" controls>
-  <source src="https://raw.githubusercontent.com/parthmax2/parthmax2/main/about2.mp4" type="video/mp4">
-</video>
-
-### Project JARVIS
-
-*Voice → Reasoning → Action*
-
+<p align="center">
+  <img src="about.gif" width="400" height="300">
+</p>
 </td>
 
 </tr>
