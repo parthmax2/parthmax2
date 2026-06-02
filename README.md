@@ -41,7 +41,7 @@ I enjoy turning ambitious AI ideas into practical systems that people can intera
 <td width="42%" align="center">
 
 <video width="100%" controls>
-  <source src="https://raw.githubusercontent.com/parthmax2/parthmax2/main/about.webm" type="video/webm">
+  <source src="https://raw.githubusercontent.com/parthmax2/parthmax2/main/about2.mp4" type="video/mp4">
 </video>
 
 ### Project JARVIS
