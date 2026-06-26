@@ -1,4 +1,4 @@
-<img src="profile.png" width="100%"/>
+<img src="profile.webp" width="100%"/>
 
 <div align="center">
 
