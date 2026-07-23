@@ -86,7 +86,10 @@ Curated 100+ high-impact open-source LLM, RAG & Agent projects.
 `LLM` `RAG` `Agents` · [![GitHub](https://img.shields.io/badge/Explore-DC143C?style=flat-square&logo=github&logoColor=white)](https://github.com/parthmax2/100-Best-GenAI-Projects-2025)
 
 ---
-
+## Open Source Contributions
+- **GitHub Docs (Official GitHub Repository)**
+  - Merged PR #45118: Fix duplicated word in image alt text for Copilot access docs
+  - 🔗 https://github.com/github/docs/pull/45118
 ## STATS
 
 <div align="center">
