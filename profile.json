@@ -1,0 +1,367 @@
+{
+  "name": "Saksham Pathak",
+  "alias": "Parthmax",
+  "location": "Lucknow, India",
+  "contact": {
+    "phone": "+91-6392425859",
+    "email": "sakshampathak676@gmail.com",
+    "portfolio": "https://parthmax.tech",
+    "github": "https://github.com/parthmax2",
+    "linkedin": "https://linkedin.com/in/sakshampathak",
+    "leetcode": "https://leetcode.com/parthmax2",
+    "huggingface": "https://huggingface.co/parthmax"
+  },
+  "summary": "Generative AI Engineer & Agentic Systems Architect specializing in Voice AI, Agentic AI, Google Agentic Development Kit (ADK), LLM Engineering, Retrieval-Augmented Generation, fine-tuning, and production AI systems. Experienced in building real-time conversational agents, custom from-scratch VAD models (<45ms), agentic determinism/failure recovery in LangGraph, speech-driven interfaces, tool-using AI systems, and scalable AI backends using FastAPI, LangGraph, WebSockets, and GCP Cloud Run.",
+  "targetRoles": ["genai-engineer", "ml-engineer", "agentic-ai-engineer", "voice-ai-engineer", "backend-ai-engineer", "cloud-ai-engineer"],
+  "focusAreas": ["Voice AI", "LLM Agents", "Google ADK", "RAG Pipelines", "Agentic Determinism", "Custom VAD from Scratch", "Fine-Tuning", "AI Automation", "barge-in voice agents", "tool-enabled LLM agent workflows", "AI-powered CRM automation", "real-time 3D conversational avatars", "PII Guardrails"],
+  "experience": [
+    {
+      "title": "Generative AI Engineer",
+      "company": "Zencia AI",
+      "companyUrl": "https://www.zencia.ai/",
+      "companyDescription": "Voice-first AI-employee SaaS platform, incorporated Apr 2025. Early engineering team member.",
+      "startDate": "2025-08",
+      "endDate": "Present",
+      "relevantRoles": ["genai-engineer", "agentic-ai-engineer", "voice-ai-engineer", "backend-ai-engineer", "cloud-ai-engineer"],
+      "teamContext": "Work was collaboratively/pair-built with other engineering leadership rather than cleanly siloed — bullets reflect co-development on a small founding engineering team, not sole ownership. Latency/scale/quality figures reflect platform-level results the team achieved together, not a solo-attributed benchmark.",
+      "metrics": {
+        "totalUsers": "5,000+",
+        "peakConcurrentCalls": "200+",
+        "firstAudioLatency": "300-800ms",
+        "voiceToVoiceLatency": "700-1500ms",
+        "callSuccessRate": "96%",
+        "uptime": "not yet confirmed — ask before publishing",
+        "costEfficiency": "not yet confirmed — ask before publishing"
+      },
+      "highlights": [
+        "Co-built a real-time conversational voice agent platform serving 5,000+ users, supporting 200+ concurrent calls on GCP Cloud Run with distributed Redis state management.",
+        "Engineered a custom Voice Activity Detection (VAD) model from scratch, achieving <45ms speech boundary detection to instantly interrupt streaming LLM tokens on user barge-in and optimize voice-to-voice latency to 300-800ms.",
+        "Maintained a 96% call success rate across production voice sessions by engineering agentic determinism and failure recovery in LangGraph (Pydantic validation retries, loop detectors, timeout circuit breakers, and fallback routing).",
+        "Built real-time input/output sanitization pipelines to redact sensitive customer PII before model inference, preventing prompt injection attacks and ensuring multi-tenant compliance.",
+        "Adapted transformer architectures for speech generation, replacing text token embeddings with audio token representations for the platform's neural TTS pipeline, boosting throughput by 35%.",
+        "Trained and fine-tuned PyTorch-based deep learning models for speech, multimodal, and generative AI tasks using transformer architectures.",
+        "Co-developed agentic workflows using LangGraph — tool calling, structured outputs, and integrations with Google Calendar, CRM systems, and databases — as part of the platform's automation layer.",
+        "Helped build production AI backend services (Async FastAPI, WebSockets, background jobs, logging, Docker, GCP Cloud Run, Vercel) and architected custom tool integrations for enterprise pilot partners."
+      ],
+      "companyProjects": [
+        "Real-time voice agent pipeline (STT -> LLM reasoning -> TTS) with WebRTC + Twilio telephony integration",
+        "Neural TTS pipeline with transformer architecture adapted for audio token generation",
+        "Agentic workflows for CRM automation and Google Calendar tool-calling via LangGraph",
+        "Production AI backend infrastructure (Async FastAPI, WebSockets, background jobs, Docker, GCP Cloud Run, Vercel deployment)"
+      ],
+      "note": "Internal engine name (TAR10) intentionally omitted from resume-facing content per instruction; described generically as \"the platform\" / \"proprietary voice-agent engine\" instead."
+    },
+    {
+      "title": "Freelance AI Developer",
+      "company": "Outlier",
+      "startDate": "2024-10",
+      "endDate": "2025-03",
+      "relevantRoles": ["genai-engineer", "ml-engineer"],
+      "highlights": [
+        "Worked as an AI freelancer contributing to LLM evaluation, prompt engineering, and Python-based AI automation tasks.",
+        "Performed response quality assessment, reasoning validation, and model behavior analysis to improve LLM output reliability.",
+        "Developed Python utilities and automation workflows for data processing, annotation, and AI task optimization."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ghostrun",
+      "status": "Live, actively growing (27 stars, 5 forks as of Oct 2026 — newest project, strongest infra-depth signal)",
+      "link": "https://pypi.org/project/ghostrun/",
+      "githubLink": "https://github.com/parthmax2/ghostrun",
+      "stars": 27,
+      "forks": 5,
+      "created": "2026-08",
+      "relevantRoles": ["genai-engineer", "ml-engineer", "agentic-ai-engineer", "backend-ai-engineer"],
+      "stack": ["Python 3.9+", "pytest", "Ollama (local judge)", "OpenAI", "Anthropic", "Gemini", "AWS Bedrock", "Bayesian search"],
+      "problemSolved": "Testing LLM apps traditionally means repeated paid API calls (slow, expensive) and flaky exact-match assertions on non-deterministic outputs.",
+      "keyFeatures": [
+        "Record/replay system: wraps tests with @ghostrun.record, caches API responses on first run, replays offline in ~0.04s afterward — fully offline CI runs.",
+        "Semantic assertions (e.g. ghostrun.expect(reply).tone_is(\"empathetic\")) graded by a local Ollama judge instead of brittle string matching — no cloud dependency, private by default.",
+        "Prompt optimization engine (`ghostrun craft`): Bayesian search over few-shot examples and instructions given an input/output signature and criterion.",
+        "Regression tracking (`ghostrun diff`) with CI integration (JUnit, PR comments); majority-vote judge caching for reliability.",
+        "Multi-provider support: 16+ HTTP providers including OpenAI, Anthropic, Gemini, AWS Bedrock.",
+        "Pure pytest integration — no custom harness or YAML config; published on PyPI with OIDC trusted publishing."
+      ],
+      "highlights": [
+        "pytest-native testing framework for AI applications: deterministic replay of LLM calls for fast, free, offline test runs.",
+        "Replaces flaky exact-match assertions with semantic judgments via a local judge model, and auto-optimizes failing prompts via Bayesian search.",
+        "Infra/tooling project (not a demo) addressing a real, well-known pain point in LLM app development (flaky/expensive tests) — the strongest evidence in the whole profile of systems/infra-level thinking rather than API wrapping.",
+        "Organic traction (27 stars, 5 forks) within weeks of launch, with no marketing push."
+      ]
+    },
+    {
+      "name": "Real-Time 3D Conversational Avatar",
+      "status": "In active development (live demo available)",
+      "link": "https://realtime-3d-avatar.vercel.app/",
+      "githubLink": "",
+      "relevantRoles": ["genai-engineer", "voice-ai-engineer", "agentic-ai-engineer"],
+      "stack": ["PyTorch", "WebRTC", "TTS", "Whisper/Deepgram", "FastAPI", "WebSockets", "Custom VAD"],
+      "highlights": [
+        "Developed a real-time AI avatar for natural voice conversations with synchronized facial blendshapes, lip movement, and streaming response generation.",
+        "Built a low-latency speech pipeline integrating Whisper/Deepgram STT, LLM reasoning, tool calling, neural TTS, WebSockets, and real-time rendering.",
+        "Implemented instant interruption handling, barge-in support via custom VAD, async FastAPI APIs, logging, and production deployment workflows."
+      ]
+    },
+    {
+      "name": "DocuMind AI — Enterprise PDF Summarization & RAG System",
+      "status": "Public repo + live Hugging Face Space",
+      "link": "https://parthmax-documind-ai.hf.space",
+      "githubLink": "https://github.com/parthmax2/DocuMind-AI",
+      "huggingFaceLink": "https://huggingface.co/spaces/parthmax/DocuMind-AI",
+      "stars": 3,
+      "forks": 1,
+      "hfLikes": 5,
+      "created": "2025-08",
+      "relevantRoles": ["genai-engineer", "ml-engineer", "cloud-ai-engineer"],
+      "stack": ["FastAPI (async)", "MCP server", "Google Gemini API", "FAISS", "Redis", "Tesseract OCR", "Docker/Docker Compose"],
+      "keyFeatures": [
+        "Multi-modal content extraction: text, tables, images, and scanned documents via Tesseract OCR.",
+        "Hybrid summarization (extractive + abstractive) with customizable tones (formal, casual, technical, executive).",
+        "Semantic search via FAISS; interactive Q&A with conversation context; multi-language support across 40+ languages.",
+        "Enterprise-oriented: rate limiting, input validation, multiple export formats (JSON, Markdown, PDF, plaintext)."
+      ],
+      "performanceMetrics": {
+        "avgProcessingTime": "~12 seconds for medium PDFs",
+        "throughput": "50+ documents/hour (single instance)",
+        "summaryConfidenceScore": "91%+",
+        "languageAccuracy": "85%+ across supported languages"
+      },
+      "highlights": [
+        "Developed a RAG-based document intelligence system for question answering and summarization across large PDF/document collections, with contextual LLM responses via an MCP server integrating Gemini.",
+        "Implemented retrieval pipelines using FAISS vector search, Redis caching, and OCR-based multi-modal extraction (text, tables, scanned pages).",
+        "Achieved 91%+ summary confidence score and 85%+ language accuracy across 40+ supported languages, processing 50+ documents/hour on a single instance."
+      ]
+    },
+    {
+      "name": "parth-dl",
+      "status": "Published on PyPI — most-starred repo",
+      "link": "https://pypi.org/project/parth-dl/",
+      "githubLink": "https://github.com/parthmax2/parth-dl",
+      "version": "1.0.1",
+      "published": "2025-10",
+      "stars": 51,
+      "forks": 9,
+      "relevantRoles": ["genai-engineer", "ml-engineer", "backend-ai-engineer"],
+      "stack": ["Pure Python (zero runtime dependencies)", "argparse CLI", "local HTTP API", "web UI"],
+      "testCoverage": "134 tests against a real loopback server",
+      "highlights": [
+        "Lightweight, zero-runtime-dependency Instagram Reels/Posts/Profile Picture/Carousel downloader — usable as CLI, Python package, local HTTP API, or built-in web UI.",
+        "Modular extractor architecture with fallback logic, retry/rate-limiting, resumable + batch downloads; 134 tests against a real loopback server.",
+        "Most-starred personal repo (51 stars, 9 forks); actively used/downloaded via PyPI, cross-platform (Windows/macOS/Linux)."
+      ]
+    },
+    {
+      "name": "FALCON",
+      "status": "Early-stage project (fake-news/claim verification pipeline) — describe as prototype, not shipped platform; README itself reports no performance metrics",
+      "link": "",
+      "githubLink": "https://github.com/parthmax2/FALCON",
+      "huggingFaceLink": "https://huggingface.co/spaces/parthmax/falcon",
+      "stars": 7,
+      "forks": 0,
+      "hfLikes": 4,
+      "created": "2025-05",
+      "relevantRoles": ["genai-engineer", "ml-engineer", "agentic-ai-engineer"],
+      "stack": ["FastAPI", "GPT-4 (primary)", "Deepseek (fallback)", "Serper", "Wikipedia", "vanilla HTML/CSS/JS", "Docker"],
+      "highlights": [
+        "Multi-stage GenAI fact-checking pipeline: categorizes submissions (factual/opinion/irrelevant/vague), analyzes tone/intent, cross-references claims via Serper + Wikipedia, and synthesizes a credibility verdict with rationale.",
+        "Automatic fallback to Deepseek when the primary GPT-4 model is unavailable, for availability resilience.",
+        "Functioning, deployable multi-stage LLM pipeline; still early-stage (few commits, no releases, no reported benchmarks) — do not oversell as a mature/scaled product."
+      ]
+    },
+    {
+      "name": "Saarthi AI — Proactive Commute-Planning Agent",
+      "status": "Complete, demo-ready autonomous multi-tool agent system",
+      "link": "",
+      "githubLink": "https://github.com/parthmax2/Saarthi-AI",
+      "huggingFaceLink": "https://huggingface.co/spaces/parthmax/SaarthiAI",
+      "stars": 5,
+      "forks": 3,
+      "hfLikes": 2,
+      "created": "2026-06",
+      "relevantRoles": ["genai-engineer", "agentic-ai-engineer"],
+      "stack": ["Google Agentic Development Kit (ADK)", "Gemini (primary)", "Groq (fallback)", "FastAPI + SSE streaming", "MongoDB Atlas", "MongoDB MCP Server", "TomTom Routing API", "Open-Meteo", "Calendarific", "Ticketmaster"],
+      "problemSolved": "Standard mapping apps react to current conditions, not future ones — doesn't answer \"when should I leave, and what local disruptions should I worry about\" for Lucknow-specific factors (religious processions, festival congestion, police diversions).",
+      "keyFeatures": [
+        "Simulates multiple future departure windows via TomTom's departAt sweep, building an ETA risk curve instead of a single estimate.",
+        "Multi-signal risk fusion: traffic, weather, local festivals/events, police advisories combined into a transparent 0-100 risk score before LLM narration.",
+        "Persistent agent memory in MongoDB Atlas with MCP tool access — agent can query/reason over historical commute patterns.",
+        "Agent layer built on Google ADK's LlmAgent with tool-calling orchestration (route/weather/festival tools + MongoDB find/aggregate/list-collections via MCP).",
+        "Degradation safety: caching, fallback LLM provider (Groq), deterministic summaries if APIs fail."
+      ],
+      "testCoverage": "121 unit tests passing (pytest); MongoDB MCP smoke-tested for find/aggregate/list-collections",
+      "highlights": [
+        "Full agentic system (not a chatbot wrapper): multi-tool orchestration, persistent memory, transparent risk scoring, and multi-provider LLM fallback.",
+        "Autonomous multi-tool agent using Google ADK, Gemini, and MongoDB MCP with automated fallback routing for resilient execution.",
+        "121 passing unit tests and a verified MongoDB MCP integration — strongest evidence of agentic-AI engineering rigor in the portfolio alongside ghostrun."
+      ]
+    },
+    {
+      "name": "CodePilot",
+      "status": "Pre-alpha / README-only since Jul 2026 — do not present as shipped",
+      "link": "",
+      "githubLink": "https://github.com/parthmax2/CodePilot",
+      "stars": 1,
+      "created": "2026-07",
+      "relevantRoles": ["genai-engineer", "agentic-ai-engineer"],
+      "stack": ["LangGraph", "LangChain", "MCP", "FAISS", "ChromaDB", "FastAPI"],
+      "highlights": [
+        "Autonomous AI engineering system concept: natural-language spec -> full application, with repo-level codebase understanding.",
+        "Phase 1 (planning, RAG, tool execution) described as mostly complete in README; no code activity beyond initial commits as of last check — treat as roadmap/concept, not a working system, until it progresses."
+      ]
+    },
+    {
+      "name": "100-Best-GenAI-Projects-2025",
+      "status": "Curated list repo, actively updated",
+      "link": "",
+      "githubLink": "https://github.com/parthmax2/100-Best-GenAI-Projects-2025",
+      "stars": 31,
+      "forks": 2,
+      "created": "2025-07",
+      "relevantRoles": ["genai-engineer", "ml-engineer"],
+      "highlights": [
+        "Curated, actively maintained list of notable GenAI projects — useful for showing ecosystem awareness, not core engineering depth."
+      ]
+    },
+    {
+      "name": "genai-starter-pack",
+      "status": "Public repo, catalog site",
+      "link": "",
+      "githubLink": "https://github.com/parthmax2/genai-starter-pack",
+      "stars": 12,
+      "forks": 1,
+      "created": "2026-06",
+      "relevantRoles": ["genai-engineer", "agentic-ai-engineer"],
+      "highlights": [
+        "Curated catalog of 50 cloneable GenAI apps spanning RAG, LangGraph, and MCP patterns."
+      ]
+    },
+    {
+      "name": "movie-box",
+      "status": "Published CLI package",
+      "link": "",
+      "githubLink": "https://github.com/parthmax2/movie-box",
+      "stars": 27,
+      "forks": 11,
+      "created": "2026-05",
+      "relevantRoles": ["backend-ai-engineer"],
+      "highlights": [
+        "CLI tool to search, download, and stream movies with an async API backend. General software-engineering credibility rather than AI-specific — low priority for GenAI/ML-focused applications."
+      ]
+    },
+    {
+      "name": "TriChat",
+      "status": "Public repo + live Hugging Face Space",
+      "link": "",
+      "githubLink": "https://github.com/parthmax2/TriChat",
+      "huggingFaceLink": "https://huggingface.co/spaces/parthmax/TriChat",
+      "stars": 4,
+      "forks": 0,
+      "hfLikes": 4,
+      "created": "2026-05",
+      "relevantRoles": ["backend-ai-engineer"],
+      "highlights": [
+        "Anonymous, ephemeral file/note-sharing rooms. Not AI-specific — useful mainly to show full-stack/backend range."
+      ]
+    },
+    {
+      "name": "Crop Recommendation / Smart-Farming",
+      "status": "Live Hugging Face Space",
+      "link": "",
+      "githubLink": "",
+      "huggingFaceLink": "https://huggingface.co/spaces/parthmax/Smart-Farming",
+      "hfLikes": 7,
+      "sdk": "Docker",
+      "created": "2024-11",
+      "category": "Applied ML / Agriculture AI",
+      "relevantRoles": ["ml-engineer"],
+      "stack": ["Python", "ML models", "data preprocessing", "deployment"],
+      "highlights": [
+        "AI/ML application recommending crops based on soil and weather inputs — earliest shipped project (Nov 2024), useful only as an ML-fundamentals data point, not for GenAI/Voice/Agentic roles."
+      ]
+    },
+    {
+      "name": "lightweight-voice-agent",
+      "status": "Live Hugging Face Space",
+      "link": "",
+      "huggingFaceLink": "https://huggingface.co/spaces/parthmax/lightweight-voice-agent",
+      "hfLikes": 1,
+      "sdk": "Gradio",
+      "category": "Voice AI / Conversational Systems",
+      "relevantRoles": ["voice-ai-engineer", "genai-engineer"],
+      "stack": ["Whisper-style STT", "LLMs", "TTS", "browser audio APIs"],
+      "highlights": [
+        "Conversational AI system combining speech recognition, LLM reasoning, and text-to-speech response generation."
+      ]
+    },
+    {
+      "name": "GPT-2 TCS Chatbot",
+      "status": "Public Hugging Face model",
+      "link": "https://huggingface.co/parthmax/gpt2-tcs-chatbot",
+      "category": "Fine-tuned LLM / Chatbot",
+      "relevantRoles": ["ml-engineer", "genai-engineer"],
+      "stack": ["GPT-2", "Hugging Face", "model training/evaluation"],
+      "highlights": [
+        "Fine-tuned/adapted GPT-2 model for an instructional/chatbot use case, published on Hugging Face.",
+        "Demonstrates model-level fine-tuning and deployment awareness beyond app-level LLM integration — best evidence for ML-engineer-facing applications."
+      ]
+    }
+  ],
+  "excludedFromRecruiterProfile": {
+    "reason": "Toy/coursework repos with no meaningful traction or technical depth for GenAI, ML, Agentic, or Voice AI roles — kept off the main projects list for all role targets.",
+    "items": ["Dynamic-QR", "JavaRunner", "watershed-project", "CarDentIQ", "FaceAging-AI", "VisualCanvas", "palm-reader", "test", "parthpy", "RNN-Fake-News", "InfoFetch", "Fast-AgingGAN", "FaceAge-and-gender-detection", "mlops-projects-iiit-lucknow-sem2 (coursework-only)"]
+  },
+  "githubStats": {
+    "accountCreated": "2024-09-29",
+    "publicRepos": 39,
+    "followers": 101,
+    "lastCheckedLive": "2026-10-09",
+    "note": "Star/fork counts above reflect live GitHub API data as of 2026-10-09; several older 0-1 star repos excluded from the main list (see excludedFromRecruiterProfile)."
+  },
+  "skills": {
+    "languages": {"items": ["Python", "JavaScript", "C++", "SQL"], "relevantRoles": ["genai-engineer", "ml-engineer", "agentic-ai-engineer", "voice-ai-engineer", "backend-ai-engineer", "cloud-ai-engineer"]},
+    "agenticEngineering": {"items": ["Google Agentic Development Kit (ADK)", "LangGraph", "LangChain", "AutoGen", "Model Context Protocol (MCP)", "Tool Calling", "Structured Outputs", "ReAct Pattern", "StateGraph Checkpointing", "Circuit Breakers", "Loop Detection", "Agentic Determinism", "LangSmith"], "relevantRoles": ["genai-engineer", "agentic-ai-engineer", "cloud-ai-engineer"]},
+    "models": {"items": ["Gemini 1.5/2.0 (Pro/Flash/Enterprise)", "Claude 3.5", "GPT-4.1", "Llama", "Qwen", "Mistral", "Whisper", "BGE Embeddings"], "relevantRoles": ["genai-engineer", "ml-engineer", "voice-ai-engineer", "cloud-ai-engineer"]},
+    "voiceAndMultimodal": {"items": ["Custom VAD from Scratch (<45ms)", "Barge-In Interruption", "WebRTC", "Twilio Telephony", "Deepgram", "Whisper", "Neural TTS Token Adaptation", "Gemini Vision OCR"], "relevantRoles": ["voice-ai-engineer", "genai-engineer", "cloud-ai-engineer"]},
+    "securityAndGuardrails": {"items": ["PII Redaction", "Prompt Injection Defense", "Structured Schema Validation", "Llama Guard", "NeMo Guardrails", "Multi-Tenant Data Isolation"], "relevantRoles": ["cloud-ai-engineer", "backend-ai-engineer", "genai-engineer"]},
+    "llmInfraAndEval": {"items": ["ghostrun (deterministic replay)", "LLM-as-a-Judge (Ollama)", "Bayesian Prompt Optimization", "vLLM", "LiteLLM", "LoRA/PEFT", "Fine-tuning", "Ragas", "Hugging Face Transformers"], "relevantRoles": ["genai-engineer", "ml-engineer", "cloud-ai-engineer"]},
+    "rag": {"items": ["FAISS", "ChromaDB", "Pinecone", "Hybrid Search", "BM25", "Vector Search", "Embeddings", "Semantic Search", "Cross-Encoder Reranking"], "relevantRoles": ["genai-engineer", "ml-engineer", "cloud-ai-engineer"]},
+    "backend": {"items": ["Async FastAPI", "Flask", "WebSockets", "REST APIs", "Auth", "Background Jobs", "Logging", "Docker", "Redis Pub/Sub & Caching", "MongoDB Atlas", "PostgreSQL"], "relevantRoles": ["backend-ai-engineer", "genai-engineer", "agentic-ai-engineer", "cloud-ai-engineer"]},
+    "deployment": {"items": ["GCP Cloud Run", "GCP VPC & IAM", "Vercel", "Hugging Face Spaces", "AWS", "CI/CD"], "relevantRoles": ["backend-ai-engineer", "genai-engineer", "cloud-ai-engineer"]},
+    "deepLearning": {"items": ["PyTorch", "TensorFlow", "CNNs", "Vision Transformers", "EfficientNet", "Transfer Learning", "GANs", "Diffusion Models", "NLP", "Computer Vision"], "relevantRoles": ["ml-engineer", "genai-engineer"]}
+  },
+  "achievements": [
+    "Solved 350+ Data Structures and Algorithms problems on LeetCode, strengthening algorithmic problem-solving.",
+    "Completed certifications in AI Agents, Advanced Model Context Protocol (MCP), and Data Analytics from Hugging Face, Anthropic, and Deloitte Australia.",
+    "Published parth-dl to PyPI (v1.0.1) — most-starred personal open-source project (51 stars).",
+    "Built ghostrun, an open-source LLM testing framework, gaining organic traction (27 stars) within weeks of launch.",
+    "39 public GitHub repositories and 12 public Hugging Face Spaces.",
+    "Contributed a merged pull request to GitHub's official documentation fixing accessibility issues."
+  ],
+  "excludedFromResume": {
+    "reason": "Not relevant to a technical GenAI/ML/Agentic/Voice AI resume at 1+ years experience — irrelevant credential or off-topic personal-brand content.",
+    "items": [
+      "IIT JAM qualified — undergraduate entrance exam credential, not relevant at this career stage",
+      "Devotional video editing / Instagram creator background — pre-engineering career history, unrelated to target roles",
+      "Portfolio brand/mission copy (\"cinematic AI world\", positioning taglines) — marketing copy for parthmax.in, not resume content"
+    ]
+  },
+  "education": [
+    {
+      "institution": "Indian Institute of Information Technology, Lucknow",
+      "degree": "M.Sc. Artificial Intelligence and Machine Learning",
+      "startDate": "2024-08",
+      "endDate": "2026-06",
+      "status": "Completed",
+      "cgpa": "8.0"
+    },
+    {
+      "institution": "Dr. Ram Manohar Lohia Avadh University",
+      "degree": "B.Sc. Mathematics",
+      "startDate": "2021",
+      "endDate": "2024",
+      "cgpa": "8.0"
+    }
+  ]
+}
